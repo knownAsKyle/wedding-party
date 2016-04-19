@@ -47,10 +47,8 @@
 
 
 
-    var main = $(".main-carousel"),
-        cell = $(".carousel-cell"),
-        wrapper = $(".mid-wrapper"),
-        personInfo = $(".person-info");
+    var main = $(".main-carousel");
+
 
     $(window).on("load", handleLoad);
     $(window).on("resize", handelResize);
@@ -77,7 +75,7 @@
             html.push('</div>');
             html.push('</div>');
             colorCounter++;
-            colorCounter = colorCounter >= colors.length? 0: colorCounter;
+            colorCounter = colorCounter >= colors.length ? 0 : colorCounter;
         }
         html.push('<div class="carousel-cell filler"></div>');
         return html.join("");
@@ -86,15 +84,18 @@
     function handleLoad() {
         main.append(buildSlider(p))
         applyFlickity();
+
         setInfoMaxSize();
     }
 
     function handelResize() {
         setInfoMaxSize();
-
     }
 
     function setInfoMaxSize() {
+        var cell = $(".carousel-cell"),
+            wrapper = $(".mid-wrapper"),
+            personInfo = $(".person-info");
         var h = cell.height();
         var wh = wrapper.height();
         personInfo.css({
