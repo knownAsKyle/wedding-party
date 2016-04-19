@@ -10,10 +10,11 @@ header {
 
 .main-carousel {
     position: fixed;
-    height: 80%;
+    height: 86%;
     width: 90%;
     left: 5%;
     top: 56px;
+    font-family: 'Lora', serif;
     /*background: rgba(0, 0, 255, .3);*/
 }
 
@@ -45,8 +46,8 @@ header {
 }
 
 .carousel-cell img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 
@@ -64,11 +65,15 @@ header {
 }
 .person-info{
 	padding: 20px 30px;
-	min-height: 400px;
-	overflow-y: auto;
+    text-align: center;
+    overflow-y:auto;
 }
 
 @media screen and (max-width: 73.375em) {
+    .main-carousel{
+        width: 100%;
+        left: 0;
+    }
     .carousel-cell img {
         width: 200px;
         height: 200px;
