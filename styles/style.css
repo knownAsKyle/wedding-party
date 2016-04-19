@@ -1,0 +1,83 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 2;
+}
+
+.main-carousel {
+    position: fixed;
+    height: 80%;
+    width: 90%;
+    left: 5%;
+    top: 56px;
+    /*background: rgba(0, 0, 255, .3);*/
+}
+
+.carousel-cell {
+    width: 75%;
+    height: 90%;
+    margin-right: 10px;
+    background: rgba(0, 0, 0, .2);
+    position: relative;
+    top: 5%;
+}
+
+.main-carousel .filler {
+    background: black !important;
+    width: 20%;
+}
+
+
+/*.carousel-cell.is-selected {
+  background: rgba(0,0,0,.8);
+}
+*/
+
+.imageWrapper{
+	float: left;
+	width:100%;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.carousel-cell img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.mid-wrapper{
+	width:100%;
+	text-align: center;
+	padding: 10px 0;
+	border-bottom: 1px solid white;
+}
+.mid-wrapper .person-name{
+	width: 100%;
+}
+.mid-wrapper .person-position{
+	width: 100%;
+}
+.person-info{
+	padding: 20px 30px;
+	min-height: 400px;
+	overflow-y: auto;
+}
+
+@media screen and (max-width: 73.375em) {
+    .carousel-cell img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 30.25em) {
+    .carousel-cell img {
+        width: 100px;
+        height: 100px;
+    }
+}
