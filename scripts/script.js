@@ -31,24 +31,24 @@
 
     var colors = [{
         "background": "rgb(51,18,39)",
-        "color": "white"
-    }, {
-        "background": "rgb(124,151,144)",
-        "color": "white"
-    }, {
-        "background": "rgb(232,215,208)",
-        "color": "white"
-    }, {
-        "background": "#FCE4EC",
         "color": "#fff"
     }, {
+        "background": "rgb(124,151,144)",
+        "color": "#fff"
+    }, {
+        "background": "rgb(232,215,208)",
+        "color": "#000"
+    }, {
+        "background": "#FCE4EC",
+        "color": "#000"
+    }, {
         "background": "rgb(79,105,80)",
-        "color": "white"
-    }]
+        "color": "#fff"
+    }];
 
 
 
-    var main = $(".main-carousel");
+    var mainSwiper = $(".main-carousel");
 
 
     $(window).on("load", handleLoad);
@@ -83,10 +83,10 @@
     }
 
     function handleLoad() {
-        main.append(buildSlider(p))
+        mainSwiper.append(buildSlider(p));
         applyFlickity();
-
-        setInfoMaxSize();
+        setTimeout(handelResize);
+        
     }
 
     function handelResize() {

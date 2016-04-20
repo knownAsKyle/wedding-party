@@ -38,11 +38,11 @@ header {
 }
 */
 
-.imageWrapper{
-	float: left;
-	width:100%;
-	text-align: center;
-	padding: 10px 0;
+.imageWrapper {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .carousel-cell img {
@@ -51,27 +51,34 @@ header {
     border-radius: 50%;
 }
 
-.mid-wrapper{
-	width:100%;
-	text-align: center;
-	padding: 10px 0;
-	border-bottom: 1px solid white;
-}
-.mid-wrapper .person-name{
-	width: 100%;
-}
-.mid-wrapper .person-position{
-	width: 100%;
-}
-.person-info{
-	padding: 20px 30px;
+.mid-wrapper {
+    width: 100%;
     text-align: center;
-    box-shadow: inset 0 18px 16px -18px rgba(0,0,0,0.8);
-    overflow-y:auto;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+.mid-wrapper .person-name {
+    width: 100%;
+}
+
+.mid-wrapper .person-position {
+    width: 100%;
+}
+
+.person-info {
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: inset 0 18px 16px -18px rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+}
+
+.flickity-page-dots {
+  bottom: -10px;
 }
 
 @media screen and (max-width: 73.375em) {
-    .main-carousel{
+    .main-carousel {
         width: 100%;
         left: 0;
     }
