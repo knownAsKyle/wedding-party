@@ -2,11 +2,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    height: 50px;
     width: 100%;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .2);
+    padding: 20px 0 20px 20px;
     z-index: 2;
 }
+
+header a {}
 
 .main-carousel {
     position: fixed;
@@ -31,7 +33,6 @@ header {
     background: black !important;
     width: 20%;
 }
-
 
 /*.carousel-cell.is-selected {
   background: rgba(0,0,0,.8);
@@ -64,6 +65,7 @@ header {
 
 .mid-wrapper .person-position {
     width: 100%;
+    font-size: .9em;
 }
 
 .person-info {
@@ -74,7 +76,7 @@ header {
 }
 
 .flickity-page-dots {
-  bottom: -10px;
+    bottom: -10px;
 }
 
 @media screen and (max-width: 73.375em) {
