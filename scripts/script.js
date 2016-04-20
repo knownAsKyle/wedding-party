@@ -17,6 +17,7 @@
     opts.setGallerySize = false;
     opts.watchCSS = false;
     opts.wrapAround = false;
+    opts.dragThreshold = 40;
 
     // Dark purple:  rgb(51,18,39)  #331227;
     // green:        rgb(124,151,144)  #7c9790;
