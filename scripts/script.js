@@ -30,7 +30,7 @@
     // olive:         rgb(213,213,205)  #d5d5cd;
 
     var colors = [{
-        "background": "rgb(51,18,39)",
+        "background": "#34495e",
         "color": "#fff"
     }, {
         "background": "rgb(124,151,144)",
@@ -72,8 +72,10 @@
             html.push('</div>');
             html.push('</div>');
             html.push('<div class="person-info">');
-            html.push(data[i].body);
-            html.push('</div>');
+            for (var t = 0, innerLen = data[i].innerPictures ? data[i].innerPictures.length : 0; t < innerLen; t++) {
+                html.push('<div class="inner-image-wrapper"><img src="images/'+data[i].innerPictures+'" / ></div>');
+            }
+            html.push(data[i].body+'</div>');
             html.push('</div>');
             colorCounter++;
             colorCounter = colorCounter >= colors.length ? 0 : colorCounter;
@@ -86,7 +88,7 @@
         mainSwiper.append(buildSlider(p));
         applyFlickity();
         setTimeout(handelResize);
-        
+
     }
 
     function handelResize() {

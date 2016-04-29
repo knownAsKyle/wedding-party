@@ -3,12 +3,16 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, .2);
+    background: #0d77b6;
     padding: 20px 0 20px 20px;
     z-index: 2;
+    font-family: 'Lora', serif;
+    color: white;
 }
 
-header a {}
+header a {
+        color: white;
+}
 
 .main-carousel {
     position: fixed;
@@ -30,7 +34,7 @@ header a {}
 }
 
 .main-carousel .filler {
-    background: black !important;
+    background: rgba(0,0,0,.1);
     width: 20%;
 }
 
@@ -47,9 +51,10 @@ header a {}
 }
 
 .carousel-cell img {
-    width: 300px;
-    height: 300px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
+    padding: 0 20px 0 0;
 }
 
 .mid-wrapper {
@@ -73,6 +78,19 @@ header a {}
     text-align: center;
     box-shadow: inset 0 18px 16px -18px rgba(0, 0, 0, 0.8);
     overflow-y: auto;
+
+}
+
+.carousel-cell .person-info .inner-image-wrapper{
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-cell .person-info img{
+    width: 300px;
+    height: 300px;
+    border-radius: 0;
+    float: left;
 }
 
 .flickity-page-dots {
@@ -87,6 +105,15 @@ header a {}
     .carousel-cell img {
         width: 200px;
         height: 200px;
+        padding: 0;
+    }
+    .carousel-cell .person-info .inner-image-wrapper{
+        width: 0;
+    }
+    .carousel-cell .person-info img{
+        padding: 2px 30px 20px 0px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -94,5 +121,16 @@ header a {}
     .carousel-cell img {
         width: 100px;
         height: 100px;
+    }
+
+    .carousel-cell .person-info .inner-image-wrapper{
+        width: auto;
+    }
+
+    .carousel-cell .person-info img{
+            height: 150px;
+            width: 150px;
+            padding: 0 0 10px 0;
+            float: none;
     }
 }
