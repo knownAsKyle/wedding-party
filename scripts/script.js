@@ -8,7 +8,7 @@
     opts.draggable = true;
     opts.freeScroll = false;
     opts.friction = 0.2;
-    opts.initialIndex = 1;
+    opts.initialIndex = 0;
     opts.lazyLoad = true;
     opts.percentPosition = true;
     opts.prevNextButtons = true;
@@ -16,7 +16,7 @@
     opts.resize = true;
     opts.setGallerySize = false;
     opts.watchCSS = false;
-    opts.wrapAround = false;
+    opts.wrapAround = true;
     opts.dragThreshold = 40;
 
     // Dark purple:  rgb(51,18,39)  #331227;
@@ -57,7 +57,7 @@
     function buildSlider(data) {
         var colorCounter = 0;
         var html = [];
-        html.push('<div class="carousel-cell filler"></div>');
+        // html.push('<div class="carousel-cell filler"></div>');
         for (var i = 0, len = data.length; i < len; i++) {
             html.push('<div class="carousel-cell" style="background:' + colors[colorCounter].background + ';color:' + colors[colorCounter].color + ';">');
             html.push('<div class="imageWrapper">');
@@ -71,16 +71,18 @@
             html.push(data[i].title + " / " + data[i].relation);
             html.push('</div>');
             html.push('</div>');
+            html.push('<div class="person-info-wrapper">')
             html.push('<div class="person-info">');
             for (var t = 0, innerLen = data[i].innerPictures ? data[i].innerPictures.length : 0; t < innerLen; t++) {
-                html.push('<div class="inner-image-wrapper"><img src="images/'+data[i].innerPictures+'" / ></div>');
+                html.push('<div class="inner-image-wrapper"><img src="images/'+data[i].innerPictures[t]+'" / ></div>');
             }
             html.push(data[i].body+'</div>');
+            html.push('</div>');
             html.push('</div>');
             colorCounter++;
             colorCounter = colorCounter >= colors.length ? 0 : colorCounter;
         }
-        html.push('<div class="carousel-cell filler"></div>');
+        // html.push('<div class="carousel-cell filler"></div>');
         return html.join("");
     }
 
@@ -88,7 +90,6 @@
         mainSwiper.append(buildSlider(p));
         applyFlickity();
         setTimeout(handelResize);
-
     }
 
     function handelResize() {

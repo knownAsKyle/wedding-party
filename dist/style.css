@@ -432,16 +432,23 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: #0d77b6;
     padding: 20px 0 20px 20px;
     z-index: 2;
     font-family: 'Lora', serif;
-    color: white;
 }
 
 header a {
-        color: white;
+    position: relative;
+    left: 0;
+    color: #0d77b6;
+    padding: 20px 10px;
+    font-size: 1.1em;
+    /*transition: all .1s;*/
 }
+
+/*header a:hover{
+    left: -10px;
+}*/
 
 .main-carousel {
     position: fixed;
@@ -462,15 +469,15 @@ header a {
     top: 5%;
 }
 
-.main-carousel .filler {
+/*.main-carousel .filler {
     background: rgba(0,0,0,.1);
     width: 20%;
-}
+}*/
 
 /*.carousel-cell.is-selected {
-  background: rgba(0,0,0,.8);
-}
-*/
+    opacity: 1;
+}*/
+
 
 .imageWrapper {
     float: left;
@@ -483,7 +490,6 @@ header a {
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    padding: 0 20px 0 0;
 }
 
 .mid-wrapper {
@@ -501,13 +507,23 @@ header a {
     width: 100%;
     font-size: .9em;
 }
-
+.person-info-wrapper{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
 .person-info {
     padding: 20px 30px;
     text-align: center;
     box-shadow: inset 0 18px 16px -18px rgba(0, 0, 0, 0.8);
-    overflow-y: auto;
+    overflow-y: scroll;
+    font-size: 1.1em;
+    line-height: 2em;
+    width: 97%;
+}
 
+.person-info p{
+    padding: 0 20px 0 0;
 }
 
 .carousel-cell .person-info .inner-image-wrapper{
@@ -520,6 +536,10 @@ header a {
     height: 300px;
     border-radius: 0;
     float: left;
+    border: 5px solid #fff;
+    border-bottom: 25px solid #fff;
+    margin: 0 20px 10px 0;
+    padding: 0;
 }
 
 .flickity-page-dots {
@@ -540,10 +560,16 @@ header a {
         width: 0;
     }
     .carousel-cell .person-info img{
-        padding: 2px 30px 20px 0px;
         width: 200px;
         height: 200px;
+        border: none;
     }
+    .person-info {
+        font-size: 1.1em;
+        line-height: 1.4em;
+        padding: 20px;
+    }
+
 }
 
 @media screen and (max-width: 30.25em) {
@@ -557,9 +583,13 @@ header a {
     }
 
     .carousel-cell .person-info img{
-            height: 150px;
-            width: 150px;
-            padding: 0 0 10px 0;
-            float: none;
+        height: 150px;
+        width: 150px;
+        margin: 0 0 6px 0;
+        float: none;
+    }
+    .person-info {
+        font-size: 1em;
+        padding: 10px 20px 10px 10px;
     }
 }
