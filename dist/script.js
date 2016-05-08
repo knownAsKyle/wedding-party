@@ -1036,7 +1036,7 @@ var party = [{
     "name": "Alexis Manion",
     "title": "Matron of honor",
     "relation": "Friend of Bride",
-    "body": "<p>Alexis and I(Abby) worked at P.F. Chang’s together while in college, and clicked right away. We’ve always had a lot in common, and will talk for hours about anything and everything. She’s funny and clever, has a sassy side we all love, and shares my obsession of trashy T.V. and celebrity gossip. </p><p>If I’m looking for advice, or someone to completely understand me, I know I can go to this amazing friend.</p>",
+    "body": "<p>Alexis and I (Abby) worked at P.F. Chang’s together while in college, and clicked right away. We’ve always had a lot in common, and will talk for hours about anything and everything. She’s funny and clever, has a sassy side we all love, and shares my obsession of trashy T.V. and celebrity gossip. </p><p>If I’m looking for advice, or someone to completely understand me, I know I can go to this amazing friend.</p>",
     "innerPictures": ["abby-alexis-med.png"]
 }, {
     "image": "maggie1.png",

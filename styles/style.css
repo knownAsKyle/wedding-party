@@ -3,7 +3,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 0 20px 20px;
+    padding: 8px 0 20px 8px;
     z-index: 2;
     font-family: 'Lora', serif;
 }
@@ -23,10 +23,10 @@ header a {
 
 .main-carousel {
     position: fixed;
-    height: 86%;
+    top:2%;
+    height: 95%;
     width: 90%;
     left: 5%;
-    top: 56px;
     font-family: 'Lora', serif;
     /*background: rgba(0, 0, 255, .3);*/
 }
@@ -39,16 +39,6 @@ header a {
     position: relative;
     top: 5%;
 }
-
-/*.main-carousel .filler {
-    background: rgba(0,0,0,.1);
-    width: 20%;
-}*/
-
-/*.carousel-cell.is-selected {
-    opacity: 1;
-}*/
-
 
 .imageWrapper {
     float: left;
@@ -127,6 +117,13 @@ header a {
         height: 200px;
         padding: 0;
     }
+    .imageWrapper{
+        padding: 10px 0 0 0;
+    }
+    .mid-wrapper .person-name {
+        width: 100%;
+        margin: 0;
+    }
     .carousel-cell .person-info .inner-image-wrapper{
         width: 0;
     }
@@ -162,5 +159,10 @@ header a {
     .person-info {
         font-size: 1em;
         padding: 10px 20px 10px 10px;
+    }
+    .person-info p{
+        padding: 0;
+        position: relative;
+        top: -16px;
     }
 }
